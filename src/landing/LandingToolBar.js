@@ -10,8 +10,8 @@ class LandingToolBar extends Component{
                 title=""                
                 showMenuIconButton = {false}
                 iconElementRight = {<div>                                        
-                                        <FlatButton label="Log In/Sing In" />                                        
-                                        <FlatButton label="Acerca de" />
+                                        <FlatButton label="Log In/Sing In"/>
+                                        <FlatButton label="Acerca de"/>
                                     </div>
                                     }                
             />
