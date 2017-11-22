@@ -1,42 +1,36 @@
 import React, { Component}  from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//Components needed to show the web.
 import LandingToolbar from './LandingToolBar';
 import LandingFooter from './LandingFooter';
+//View of Links
+import Intro from '../components/Intro'
+import Login from '../components/Login';
+import NotFound from '../components/NotFound'
 
 const styles = {
     body:{
-        'margin': '0',
-        'padding': '0',
-        'font-family': 'sans-serif'
-    },
-    content:{
         'padding': '150px 15% 150px',
         'margin': 'auto',
         'display': 'flex',
-        'flex-direction': 'column'
-    },
-    title:{        
-        'font-size': '60px',
-        'text-align': 'center',
-        'font-style': 'italic'            
-    },
-    button :{
-        'max-width': '80px',
-        'margin': 'auto'
+        'flex-direction': 'column'    
     }
 };
-
 class Landing extends Component{
     render(){
         return(
             <div >
                 <LandingToolbar/>
-                <div style={styles.content}>
-                    <h1 style={styles.title}>To Do Now</h1>
-                    <RaisedButton label="Iniciar" primary={true} style={styles.button} />
-                </div>
-                <LandingFooter/>
+                <Router>
+                    <div style={styles.body}>
+                        <Switch>
+                            <Route exact path='/' component={Intro} />
+                            <Route exact path='/Login' component={Login} />
+                            <Route component={NotFound} />
+                        </Switch>
+                    </div>
+                </Router>  
+                <LandingFooter/>    
             </div>            
         );
     }

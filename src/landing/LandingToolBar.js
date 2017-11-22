@@ -4,21 +4,21 @@ import FlatButton from 'material-ui/FlatButton';
 
 class LandingToolBar extends Component{        
     render(){
-        return(  
+        return(                          
             <div>
-            <AppBar                  
-                title=""                
-                showMenuIconButton = {false}
-                iconElementRight = {<div>                                        
-                                        <FlatButton label="Log In/Sing In"/>
-                                        <FlatButton label="Acerca de"/>
-                                    </div>
-                                    }                
-            />
-            </div>  
+                <AppBar                  
+                    title=""                
+                    showMenuIconButton = {false}
+                    iconElementRight = {                                        
+                                        <div>                                                                                    
+                                            <FlatButton label="Log In/Sing In" href={'/Login'}  target='_self' />
+                                            <FlatButton label="Acerca de"/>                                            
+                                        </div>                                                                        
+                                        }                
+                />                        
+            </div>            
         );
     }
-
 }
 
 export default LandingToolBar;
