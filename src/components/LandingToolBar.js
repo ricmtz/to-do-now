@@ -11,8 +11,8 @@ class LandingToolBar extends Component{
                     showMenuIconButton = {false}
                     iconElementRight = {                                        
                                         <div>                                                                                    
-                                            <FlatButton label="Log In/Sing In" href={'/Login'}  target='_self' />
-                                            <FlatButton label="Acerca de"/>                                            
+                                            <FlatButton label="Log In/Sing In" href={'/Singin'} />
+                                            <FlatButton label="Acerca de" href={'/AboutUs'}/>                                            
                                         </div>                                                                        
                                         }                
                 />                        

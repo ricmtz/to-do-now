@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import Landing from './landing/Landing'
+import Landing from './Landing'
 
 class App extends Component{
     render(){
