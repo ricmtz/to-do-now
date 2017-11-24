@@ -7,7 +7,7 @@ import LandingFooter from '../components/LandingFooter';
 
 const styles = {
     content:{                
-        'padding': '100px 15% 150px',
+        'padding': '100px 15% 150px'
     },
     login_container: {
         'display': 'flex',
@@ -16,8 +16,7 @@ const styles = {
     },
     form_container: {
         'padding': '30px',
-        'border': '1px solid black',
-        'border-radius': '15px'
+        'border': '1px solid black'
     },    
     header2: {                
         'border-bottom': '1px solid black'
@@ -38,9 +37,14 @@ class Login extends Component{
                         <div style={styles.form_container}>
                             <h2 style={styles.header2}>Iniciar Sesion</h2>
                             <p>Usuario</p>
-                            <TextField />                    
+                            <TextField 
+                                hintText="ejemplo123"
+                            />                    
                             <p>Contraseña</p>
-                            <TextField type="password" />                    
+                            <TextField 
+                                type="password" 
+                                hintText="****"
+                            />
                             <div style={styles.button_container}>
                                 <RaisedButton 
                                     label="Aceptar" 
