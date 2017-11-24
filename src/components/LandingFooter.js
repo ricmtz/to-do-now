@@ -27,13 +27,13 @@ class FooterLanding extends Component{
                 <FlatButton
                         style={styles.contact_btn}
                         href=""
-                        target="_blank"
+                        target="_self"
                         label="Facebook"
                     />
                     <FlatButton
                         style={styles.contact_btn}
                         href="" 
-                        target="_blank"
+                        target="_self"
                         label="GitHub"
                     />                    
                 </div>                                
