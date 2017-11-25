@@ -8,11 +8,12 @@ const styles = {
         'bottom': '0',
         'width': '100%',
         'height': '40px',
-        'color': '#FFFFFF'
+        'color': '#FFFFFF',
+        zIndex: '9999',
     },
     contact:{
         'position': 'fixed',
-        'right': '0'        
+        'right': '0',
     },
     contact_btn:{
         'color': "#FFFFFF"
@@ -32,14 +33,14 @@ class FooterLanding extends Component{
                     />
                     <FlatButton
                         style={styles.contact_btn}
-                        href="" 
+                        href=""
                         target="_self"
                         label="GitHub"
-                    />                    
-                </div>                                
+                    />
+                </div>
             </div>
         );
-    }    
+    }
 }
 
 export default FooterLanding;
