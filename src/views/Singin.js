@@ -3,20 +3,17 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import Checkbox from 'material-ui/Checkbox';
 
-import LandingToolBar from '../components/LandingToolBar';
-import LandingFooter from '../components/LandingFooter';
-
 const styles = {
     content: {
         'padding': '100px 15% 150px',
         'display': 'flex',
         'justify-content': 'center'
     },
-    form_container: {        
-        'padding': '30px',                
-        'border': '1px solid black',        
+    form_container: {
+        'padding': '30px',
+        'border': '1px solid black',
         'display': 'flex',
-        'flex-direction': 'column'        
+        'flex-direction': 'column'
     },
     button: {
         'width': '80px'
@@ -27,11 +24,10 @@ class Singin extends Component{
     render(){
         return(
             <div>
-                <LandingToolBar/>
                 <div style={styles.content}>
                     <div style={styles.form_container}>
                         <h1>Registrate</h1>
-                        <p>o <a href={'/Login'}>Iniciar sesion</a></p>                    
+                        <p>o <a href={'/Login'}>Iniciar sesion</a></p>
                         <TextField
                             hintText= "Nombre"
                         />
@@ -47,7 +43,7 @@ class Singin extends Component{
                         <Checkbox
                             label="Acepto terminos y condiciones."
                         />
-                        <RaisedButton 
+                        <RaisedButton
                             label="Aceptar"
                             primary={true}
                             style={styles.button}
@@ -55,7 +51,6 @@ class Singin extends Component{
 
                     </div>
                 </div>
-                <LandingFooter/>
             </div>
         );
     }
